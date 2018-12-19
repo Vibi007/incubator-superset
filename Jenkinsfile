@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '''pip install -r requirements.txt
 pip install -r requirements-dev.txt
+pip install mysqlclient
 pip install -e .
 superset db upgrade
 superset init
